@@ -1,0 +1,174 @@
+import java.util.*;
+
+public class ArrayLEx
+{
+    public static void main(String args[])
+    {
+        List<String> l1=new ArrayList<String>();
+        l1.add("Red");
+        l1.add("Green");
+        l1.add("Yellow");
+        l1.add("Blue");
+        l1.add("Black");
+        l1.add("Pink");
+        
+        System.out.println(l1+"\n");
+        
+        // iterate through all elements 
+        for(String str:l1)
+        {
+            System.out.println(str);
+        }
+        
+        // insert an element into the array list at the 1st position
+        l1.add(0,"Silver");
+        System.out.println(l1);
+        
+        // Retrieve an element from specific index
+        String s=l1.get(3);
+        System.out.println(s);
+        
+        // update an array element by the given element
+        l1.set(0,"Grey");
+        System.out.println(l1);
+        
+        // remove the 3rd element from an array list
+        l1.remove(3);
+          System.out.println(l1);
+          
+        //   Search element in an array
+        
+        if(l1.contains("Grey"))
+        {
+            System.out.println("Right");
+        }
+        else
+        {
+             System.out.println("Wrong");
+        }
+      
+    //   sort a given arrayList
+    
+    Collections.sort(l1);
+    System.out.println(l1);
+    
+    
+    // Copy one list into another
+    List<String> l=new ArrayList<String>();
+        l.add("hii");
+        l.add("welcome to");
+        l.add("Java World !!");
+        
+         System.out.println(l);
+         
+         Collections.copy(l1,l);
+         System.out.println("After copy :"+l1+"\n");
+          System.out.println("After copy :"+l+"\n");
+          
+        //  shuffle elements in an arraylist
+        Collections.shuffle(l1);
+        System.out.println("After Shuffle:"+l1);
+        
+        // reverse an arrayList
+        Collections.reverse(l1);
+        System.out.println("After Reverse:"+l1);
+        
+        // Extract portion of ArrayList
+        
+        List<String> sL = l1.subList(0, 3);
+        System.out.println(sL);
+        
+        // Compare two array lists
+        ArrayList<String> l3=new ArrayList<String>();
+        for(String e:l)
+            l3.add(l.contains(e) ? "Yes":"No");
+            
+        System.out.println(l3);
+        
+        // Swap Two elements
+        
+        ArrayList<String> c1= new ArrayList<String>();
+          c1.add("Red");
+          c1.add("Green");
+          c1.add("Black");
+          c1.add("White");
+          c1.add("Pink");
+
+          System.out.println("Array list before Swap:");
+          for(String a: c1){
+          System.out.println(a);
+        }
+      
+         Collections.swap(c1, 0, 2);
+          System.out.println("Array list after swap:");
+          for(String b: c1)
+          {
+          System.out.println(b);
+          }
+          
+        //   Join Two ArrayList
+        
+          ArrayList<String> c2= new ArrayList<String>();
+          c2.add("Red");
+          c2.add("Green");
+          c2.add("Black");
+          c2.add("White");
+          c2.add("Pink");
+        
+        
+        ArrayList<String> a = new ArrayList<String>();
+        a.addAll(c1);
+        a.addAll(c2);
+        System.out.println("New array: " + a);
+        
+        
+        
+        // Clone an array list to another arraylist
+        ArrayList<String> newc1 = (ArrayList<String>)c1.clone();
+          System.out.println("Cloned array list: " + newc1);  
+       
+       //empty an array list.
+       System.out.println(c1);
+       newc1.removeAll(c1);
+       
+    //   test whether an array list is empty or not. 
+    System.out.println( "The list is empty or not  : "+c1.isEmpty()+"\n");
+    
+    // Capacity of an arrayList
+     c2.trimToSize();
+          System.out.println(c2);
+    
+    // increase an array list size
+    //Increase capacity to 6
+          c2.ensureCapacity(16);
+          c2.add("White");
+          c2.add("Pink");
+          c2.add("Yellow");
+          System.out.println("New array list: " + c2);
+          
+//replace the second element of an ArrayList with the specified element. 
+         
+  ArrayList<String>  cc = new ArrayList<String>();
+  cc.add("Red");
+  cc.add("Green");
+
+  System.out.println("Original array list: " + cc);
+  String nc = "White";
+  cc.set(1,nc);
+
+  int num=cc.size();
+  System.out.println("Replace second element with 'White'."); 
+  for(int i=0;i<num;i++)
+  System.out.println(cc.get(i));
+  
+  
+ //print all the elements of an ArrayList using the elements' position
+  
+  System.out.println("\nPrint using index of an element: ");
+  int ne = c2.size();
+  for (int index = 0; index < ne; index++)
+   System.out.println(c2.get(index));
+      
+    
+    }
+}
