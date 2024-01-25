@@ -1,0 +1,52 @@
+java -cp /tmp/pG9QX032jJ ArrayLEx
+[Red, Green, Yellow, Blue, Black, Pink]
+
+Red
+Green
+Yellow
+Blue
+Black
+Pink
+[Silver, Red, Green, Yellow, Blue, Black, Pink]
+Yellow
+[Grey, Red, Green, Yellow, Blue, Black, Pink]
+[Grey, Red, Green, Blue, Black, Pink]
+Right
+[Black, Blue, Green, Grey, Pink, Red]
+[hii, welcome to, Java World !!]
+After copy :[hii, welcome to, Java World !!, Grey, Pink, Red]
+After copy :[hii, welcome to, Java World !!]
+After Shuffle:[Red, hii, Java World !!, welcome to, Grey, Pink]After Reverse:[Pink, Grey, welcome to, Java World !!, hii, Red][Pink, Grey, welcome to]
+[Yes, Yes, Yes]
+Array list before Swap:
+Red
+Green
+Black
+White
+Pink
+Array list after swap:
+Black
+Green
+Red
+White
+Pink
+New array: [Black, Green, Red, White, Pink, Red, Green, Black, White, Pink]
+Cloned array list: [Black, Green, Red, White, Pink][Black, Green, Red, White, Pink]
+The list is empty or not  : false
+
+[Red, Green, Black, White, Pink]
+New array list: [Red, Green, Black, White, Pink, White, Pink, Yellow]
+Original array list: [Red, Green]
+Replace second element with 'White'.
+Red
+White
+
+Print using index of an element: 
+Red
+Green
+Black
+White
+Pink
+White
+Pink
+Yellow
