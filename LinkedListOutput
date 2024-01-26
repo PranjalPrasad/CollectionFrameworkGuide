@@ -1,0 +1,19 @@
+java -cp /tmp/XpRNohDQoI LinkedListDemo
+All Examples and Operations performed on Linked List
+[Red, Yellow, Black]
+Append the color brown
+[Red, Yellow, Black, Brown]iterate LinkedList
+Red
+Yellow
+Black
+Brown
+Black
+Brown
+List Before Reversing LinkedList:[Red, Yellow, Black]
+
+Black
+
+Yellow
+
+Red
+
