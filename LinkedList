@@ -1,0 +1,61 @@
+import java.util.*;
+
+public class LinkedListDemo
+{
+    public static void main(String [] args)
+    {
+        System.out.println("All Examples and Operations performed on Linked List"+"\n");
+        
+        LinkedList<String> l1=new LinkedList<String> ();
+        l1.add("Red");
+        l1.add("Yellow");
+        l1.add("Black");
+        
+        System.out.println(l1);
+        
+        // append element at the end of the linkedlist
+        System.out.println("Append the color brown"+"\n");
+        l1.add("Brown");
+        System.out.println(l1);
+        
+        // iterate through all elements on the Linked List
+        System.out.println("iterate LinkedList"+"\n");
+        
+        for(String ele :l1)
+        {
+            System.out.println(ele);
+        }
+        
+        
+        
+          // iterate through all elements on the Linked List starting at the specified position
+        //   First Set iterator at specific index
+        Iterator p=l1.listIterator(2);
+        // print list from third position
+        while(p.hasNext())
+        {
+            System.out.println(p.next());
+        }
+        
+        
+        
+        
+        // iterate LinkedList in reverse order
+         LinkedList<String> l2=new LinkedList<String> ();
+        l2.add("Red");
+        l2.add("Yellow");
+        l2.add("Black");
+        System.out.println("List Before Reversing LinkedList:"+l2+"\n");
+       Iterator it = l2.descendingIterator();
+        // print list from third position
+        while(it.hasNext())
+        {
+            System.out.println(it.next()+"\n");
+        }
+        
+        
+        
+        // insert the specified element at the specified position in the linked list. 
+    }
+    
+}
