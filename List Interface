@@ -1,0 +1,61 @@
+import java.util.*;
+class ListInterfaceExample
+{
+    public static void main(String[] args)
+    {
+        List<String> l1=new ArrayList<String>();
+        
+        // Add Elements in List 
+        // time complexity- O(1) : space complexity-O(1)
+        l1.add("Latur");
+        l1.add("Pune");
+        l1.add("Solapur");
+        l1.add("Beed");
+        l1.add("Nashik");
+        l1.add("Latur");
+        // It allowes duplicate elements
+        System.out.println(l1);
+        
+        
+        // Updating Elements in List
+        // time complexity- O(N) : space complexity-O(N)
+        l1.set(2,"Nagpur");
+        System.out.println("After Updating The List is:  "+l1);
+        
+        
+        // searching Elements in List-indexOf(element),lastIndexOf(element)
+        int index=l1.indexOf("Latur");
+        System.out.println("index of Latur is:  "+l1);
+        int lastindex=l1.lastIndexOf("Pune");
+        System.out.println("last index of Latur is:  "+l1);
+        
+        // Removing Elements in List-remove(Object),remove(int index)   
+        // time complexity- O(N) : space complexity-O(N)
+        l1.remove(1);
+        System.out.println("list after removing element at index 1:  "+l1);
+        l1.remove("Beed");
+        System.out.println("list after removing Beed :  "+l1);
+        
+        
+        // Accessing Element in List- get(int index)method is used to access.
+        String str=l1.get(3);
+        System.out.println(str);
+        
+        // Checking if an element is present in the List - contains(Object)
+         boolean ele=l1.contains("Nagpur");
+         System.out.println("Nagpur is present in list or not  :  "+l1);
+         
+        //  Traversing List
+        // time complexity- O(N) : space complexity-O(N)
+        for (int i = 0; i < l1.size(); i++) 
+        { 
+            System.out.print(l1.get(i) + " "); 
+        } 
+        
+         for (String str1 :l1) 
+         {
+            System.out.print(str1 + " "); 
+    
+         }
+    }
+}
