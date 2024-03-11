@@ -1,0 +1,9 @@
+[Latur, Pune, Solapur, Beed, Nashik, Latur]
+After Updating The List is:  [Latur, Pune, Nagpur, Beed, Nashik, Latur]
+index of Latur is:  [Latur, Pune, Nagpur, Beed, Nashik, Latur]
+last index of Latur is:  [Latur, Pune, Nagpur, Beed, Nashik, Latur]
+list after removing element at index 1:  [Latur, Nagpur, Beed, Nashik, Latur]
+list after removing Beed :  [Latur, Nagpur, Nashik, Latur]
+Latur
+Nagpur is present in list or not  :  [Latur, Nagpur, Nashik, Latur]
+Latur Nagpur Nashik Latur Latur Nagpur Nashik Latur 
