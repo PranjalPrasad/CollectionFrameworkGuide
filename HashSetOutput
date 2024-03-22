@@ -1,0 +1,24 @@
+The Hashset is:[Red, Green , Black, Orange]
+cloned Hash Set: [Red, Green , Black, Orange]
+Converting hashset to an array
+Elements are : Red
+Elements are : Green 
+Elements are : Black
+Elements are : Orange
+converting hashset to treeset 
+Original hash set is [Red, Green , Black, Orange]
+Treeset elements: 
+Black
+Green 
+Orange
+Red
+Converting HashSet to List/ArrayList
+the original HashSet is: [Red, Green , Black, Orange]
+ArrayList Contains: [Red, Green , Black, Orange]
+YES
+NO
+YES
+YES
+HashSet Content: 
+[Red, Black, Orange]
+HashSet Content: []
