@@ -1,0 +1,125 @@
+import java.util.*;
+
+class HashsetEx 
+{
+    public static void main(String[] args) 
+    {
+        
+        HashSet<String> hs=new HashSet<String>();
+        // Append the specified element to the end of a hashset
+        hs.add("Red");
+        hs.add("Blue");
+        hs.add("Black");
+        hs.add("Pink");
+        System.out.println("The Hashset is:"+ hs);
+        
+        // Iterate through all elements in HashSet
+        
+        System.out.println("Iterate Through all elements in a hash set are as follows -");
+        
+        Iterator<String> str= hs.iterator();
+        while(str.hasNext())
+        {
+            System.out.println(str.next());
+        }
+        
+        // To get number of elements in a hashset
+        
+        System.out.println("Size of hashset is : "+ hs.size());
+        
+        
+        // To empty an hashset
+        
+        System.out.println("original hashset is :  "+ hs);
+        
+        hs.removeAll(hs);
+          System.out.println("After Removing alll elements  from hashset hashset is :  "+ hs);
+          
+          
+        //   test if hashset is empty or not
+          System.out.println("Check if hashset is empty or not:  "+ hs.isEmpty());
+        
+        
+        // clone hashset
+        
+        HashSet<String> hs1=new HashSet<String>();
+        // Append the specified element to the end of a hashset
+        hs1.add("Red");
+        hs1.add("Green ");
+        hs1.add("Black");
+        hs1.add("Orange");
+        System.out.println("The Hashset is:"+ hs1);
+        
+        HashSet<String> newhs=new HashSet <String>();
+        newhs=(HashSet)hs1.clone();
+        System.out.println("cloned Hash Set: "+newhs);
+        
+        
+        
+        // Convert hashset to an array
+         System.out.println("Converting hashset to an array");
+        String[]arr=new String[hs1.size()];
+        hs1.toArray(arr);
+        
+        // displaying array elements
+        
+        for(String ele:arr)
+        {
+            System.out.println("Elements are : "+ele);
+        }
+      
+      
+        // Converting hashset to treeset
+        
+        System.out.println("converting hashset to treeset ");
+        
+        System.out.println("Original hash set is "+hs1);
+        
+        Set<String> ts=new TreeSet<String>(hs1);
+        System.out.println("Treeset elements: ");
+        for(String ele1:ts)
+        {
+            System.out.println(ele1);
+        }
+        
+        
+        // Convert HashSet to List /ArrayList
+        
+        System.out.println("Converting HashSet to List/ArrayList");
+        
+        System.out.println("the original HashSet is: "+hs1);
+        
+        List<String> l1=new ArrayList<String>(hs1);
+        System.out.println("ArrayList Contains: "+l1);
+        
+        
+        // Comaprison of two hashsets
+        
+         HashSet<String>hs2= new HashSet<String>();
+          hs2.add("Red");
+          hs2.add("Pink");
+          hs2.add("Black");
+          hs2.add("Orange");
+          
+          HashSet<String> rs= new HashSet<String>();
+          for(String ele2:hs1)
+          {
+              System.out.println(hs2.contains(ele2)? "YES":"NO");
+          }
+        
+        
+        
+        // Comapre two sets and retain elements that are the same
+        
+        hs1.retainAll(hs2);
+        System.out.println("HashSet Content: ");
+        System.out.println(hs1);
+        
+        
+        // Remove All the elements from the hashset
+        
+        hs2.clear();
+        System.out.println("HashSet Content: "+hs2);
+        
+    }
+}
