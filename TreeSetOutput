@@ -1,0 +1,48 @@
+TreeSet is: [Black, Red, green, orange, white]
+iterate through all elments in the treeset
+Elements in a treeset are: 
+Black
+Red
+green
+orange
+white
+TreeSet2 is: [Red, green, orange, pink, yellow]
+TreeSet1: [Black, Red, green, orange, pink, white, yellow]
+Elements in reverse order:
+yellow
+white
+pink
+orange
+green
+Red
+Black
+First Element in a treeset is:Black
+last Element in a treeset is:yellow
+TreeSet clone:
+cloned tree list: [Black, Red, green, orange, pink, white, yellow]
+Size of the tree set: 7
+YES
+YES
+YES
+YES
+YES
+Tree set Data: 
+1 
+2 
+3 
+5 
+6 
+Greater than or equal to 86 : 89
+Greater than or equal to 29 : 36
+Less than or equal to 86 : 82
+Less than or equal to 29 : 25
+Strictly greater than 76 : 82
+Strictly greater than 31 : 36
+Strictly less than 69 : 36
+Strictly less than 12 : 10
+Removes the first or lowest element: 10
+Tree set after removing first element: [14, 16, 22, 25, 36, 70, 82, 89]
+Removes the last element: 89
+Tree set after removing last element: [14, 16, 22, 25, 36, 70, 82]
+Removes 70 from the list: true
+Tree set after removing last element: [14, 16, 22, 25, 36, 82]
